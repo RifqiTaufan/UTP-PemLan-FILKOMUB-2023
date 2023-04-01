@@ -14,6 +14,7 @@ public class Meja {
 
     public void setNomorMeja(int nomorMeja) {
         this.nomorMeja = nomorMeja;
+        
     }
 
     public Pelanggan getPelanggan() {
@@ -45,5 +46,10 @@ public class Meja {
     // untuk mengecek apakah meja kosong
     public boolean isKosong() {
         // EDIT DISINI
+        if (this.getPelanggan() == null) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
